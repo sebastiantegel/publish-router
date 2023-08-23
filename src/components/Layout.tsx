@@ -1,3 +1,4 @@
+import { CookiesProvider } from "react-cookie";
 import { Link, Outlet } from "react-router-dom";
 
 export const Layout = () => {
@@ -19,7 +20,9 @@ export const Layout = () => {
         </nav>
       </header>
       <main>
-        <Outlet />
+        <CookiesProvider>
+          <Outlet />
+        </CookiesProvider>
       </main>
       <footer>FOOTER</footer>
     </>
