@@ -11,10 +11,13 @@ export const Home = () => {
     setCookie("FED22D", "The best, most awesome class ever", {
       expires: d,
     });
+    console.log(cookies.FED22D);
   };
 
   const deleteCookie = () => {
     removeCookie("FED22D");
+
+    console.log(cookies.FED22D);
   };
 
   return (
