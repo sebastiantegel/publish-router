@@ -6,7 +6,6 @@ export const Home = () => {
   const handleClick = () => {
     const d = new Date();
     d.setTime(d.getTime() + 10 * 24 * 60 * 60 * 1000);
-    // const expires = "expires=" + d.toUTCString();
 
     setCookie("FED22D", "The best, most awesome class ever", {
       expires: d,
